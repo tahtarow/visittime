@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="32e8f967-0134-480d-8610-e2af7cbabe25" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cE6sJnPYyc4MbrZjnELyQKmXRG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/setting" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OSPanel\domains\visit-time.com\views" />
+      <recent name="D:\OSPanel\domains\visit-time.com\views\lib" />
+      <recent name="D:\google drive\visit-time.com\views\lib" />
+      <recent name="D:\google drive\visit-time.com\views" />
+      <recent name="D:\OSPanel\domains\visit-time.com\controllers\network-time" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OSPanel\domains\visit-time.com\views\setting" />
+      <recent name="D:\google drive\visit-time.com\controllers\setting\spot" />
+      <recent name="D:\OSPanel\domains\visit-time.com\views" />
+      <recent name="D:\OSPanel\domains\visit-time.com\views\css" />
+      <recent name="D:\OSPanel\domains\visit-time.com\views\js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="login.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/visit-time.com/views/login.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.login.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32e8f967-0134-480d-8610-e2af7cbabe25" name="Default Changelist" comment="" />
+      <created>1589888302501</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589888302501</updated>
+      <workItem from="1589888310543" duration="44638000" />
+      <workItem from="1590081653397" duration="7720000" />
+      <workItem from="1590128195310" duration="5301000" />
+      <workItem from="1590168032769" duration="7207000" />
+      <workItem from="1590242602940" duration="20114000" />
+      <workItem from="1590388565421" duration="13992000" />
+      <workItem from="1590428102123" duration="9233000" />
+      <workItem from="1590669643178" duration="479000" />
+      <workItem from="1590671959435" duration="3826000" />
+      <workItem from="1590675876031" duration="32000" />
+      <workItem from="1590736763184" duration="6754000" />
+      <workItem from="1590822631560" duration="5108000" />
+      <workItem from="1590933357651" duration="1528000" />
+      <workItem from="1591338533766" duration="215000" />
+      <workItem from="1591338780745" duration="98000" />
+      <workItem from="1591338904913" duration="49000" />
+      <workItem from="1591340201840" duration="213000" />
+      <workItem from="1591342657657" duration="85000" />
+      <workItem from="1591344307086" duration="163000" />
+      <workItem from="1591344497912" duration="11079000" />
+      <workItem from="1591469463422" duration="17846000" />
+      <workItem from="1591980300246" duration="85000" />
+      <workItem from="1591980467696" duration="1059000" />
+      <workItem from="1592037402092" duration="4304000" />
+      <workItem from="1592113184913" duration="16654000" />
+      <workItem from="1592287723741" duration="24036000" />
+      <workItem from="1592398749787" duration="837000" />
+      <workItem from="1592399677941" duration="425000" />
+      <workItem from="1592400144665" duration="251000" />
+      <workItem from="1592403343131" duration="3066000" />
+      <workItem from="1592466548626" duration="303000" />
+      <workItem from="1592727064807" duration="1199000" />
+      <workItem from="1592849391134" duration="628000" />
+      <workItem from="1592981460112" duration="4478000" />
+      <workItem from="1592998074028" duration="2794000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="118" width="793" height="813" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog" timestamp="1591345162320">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="118" width="793" height="813" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591345162320" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1592982237133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592982237133" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1592991488789">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592991488789" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1592991488789">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592991488789" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1592991488789">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592991488789" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1592991488789">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592991488789" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1592983625289">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592983625289" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592132709529" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1591346199110">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591346199110" />
+    <state x="768" y="259" width="570" height="524" key="StructurePopup" timestamp="1591345597626">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="768" y="259" width="570" height="524" key="StructurePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591345597626" />
+    <state width="498" height="452" key="SwitcherDM" timestamp="1593000691782">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="452" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593000691782" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1592982237133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592982237133" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1592982237133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592982237133" />
+    <state x="763" y="189" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592309534021">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="763" y="189" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592309534021" />
+    <state x="763" y="189" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592133147878" />
+    <state x="474" y="168" width="958" height="808" key="find.popup" timestamp="1592482827083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="474" y="168" width="958" height="808" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592482827083" />
+    <state x="854" y="274" key="run.anything.popup" timestamp="1590175840109">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="854" y="274" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590175840109" />
+    <state x="824" y="354" width="672" height="678" key="search.everywhere.popup" timestamp="1592983443222">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="824" y="354" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592983443222" />
+    <state x="824" y="354" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590176695484" />
+  </component>
+</project>

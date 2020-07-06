@@ -1,0 +1,94 @@
+ html{
+head{
+    css{/views/css/bootstrap.min.css}
+    js{/views/js/bootstrap.min.js,http://code.jquery.com/jquery-latest.js}
+
+    <?less(VIEWS.'/css/index.less')?>
+
+}
+ body{
+    .my-container{
+        .big-calendar{
+            .calendar-head{
+                .month.big-dark-btn{december}
+                a="https://google.com"{.big-dark-btn-arrow.dark_hover{<}}
+                a="https://google.com"{.big-dark-btn-arrow.dark_hover{>}}
+                select.spot* onchange="top.location=this.value" *{
+                                    option{48}
+                                    option* value="https://google.com" *{Heimfelder Str. 42, 42Heimfelder Str. 42, 42}
+                                    option{9187}
+                                    option{9187}
+                                    option{9187}
+                }
+                span.spot-title{Select spot}
+            .float-off{}
+             .week{
+                 .day-name{.{Monday}}
+                 .day-name{.{Monday}}
+                 .day-name{.{Monday}}
+                 .day-name{.{Monday}}
+                 .day-name{.{Monday}}
+                 .day-name{.{Monday}}
+                 .day-name{.{Monday}}
+             }
+            .week{
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+            }
+            .week{
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+            }
+            .week{
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+            }
+            .week{
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+            }
+            .week{
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+            }
+            .week{
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+                .day{a="/"{.head{  .number{12}.message{NEW EVENT(1)}  } .events{Events:1} }}
+            }
+        }
+
+}
+}
+
+
+}
