@@ -25,7 +25,7 @@ if ($user->logged and
 
 $router->controller_404 = CONTROLLERS . '/404.php';
 $router->run();
-
+//1
 
 include_once $router->patch_to_controller;
 
