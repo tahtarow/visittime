@@ -26,7 +26,7 @@ class User
         $email_confirm_code = getRandomnString(20);
         if ($visitor = ORM::forTable('users')->where('email', $email)->findOne()) {
             if ($visitor['required'] == 1) {
-                $errors[] = 'Die Postanschrift wird bereits verwendet, verwenden Sie eine andere Postanschrift';
+                $errors[] = localisation::txt('Эот email уже используется');
             }
         } else {
             $visitor = ORM::forTable('users')->create();

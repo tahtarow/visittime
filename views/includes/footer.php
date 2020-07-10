@@ -40,28 +40,33 @@
             <!--                    <li><a href="#">Amet Lacinia</a></li>-->
             <!--                </ul>-->
             <section>
-                <select name="" id="">
-                    <option value="">Название орг1</option>
-                    <option value="">Название орг1</option>
-                    <option value="">Название орг1</option>
-                    <option value="">Название орг1</option>
-                </select>
+<!--                <select name="" id="">-->
+<!--                    <option value="">Название орг1</option>-->
+<!--                    <option value="">Название орг1</option>-->
+<!--                    <option value="">Название орг1</option>-->
+<!--                    <option value="">Название орг1</option>-->
+<!--                </select>-->
                 <div class="mini-posts">
                     <article>
                         <!--                            <a href="#" class="image"><img src="images/pic08.jpg" alt=""></a>-->
                         <ul>
-                            <li><a href="/calendar"><?=localisation::txt('календарь')?></a></li>
-                            <li><a href="/records"><?=localisation::txt('заявки')?></a></li>
-                            <li><a href="/calendar"><?=localisation::txt('клиенты')?></a></li>
-                            <li><a href="/statistic"><?=localisation::txt('статистика')?></a></li>
-                            <li><a href="/staff"><?=localisation::txt('Персонал')?></a></li>
-                            <li><a href="/setting"><?=localisation::txt('настройки')?></a></li>
+                            <li><a href="/calendar"><?=localisation::txt('Календарь')?></a></li>
+                            <li><a href="/records"><?=localisation::txt('Заявки')?></a></li>
+                            <li><a href="/calendar"><?=localisation::txt('Клиенты')?></a></li>
+                            <li><a href="/statistic"><?=localisation::txt('Статистика')?></a></li>
                         </ul>
                     </article>
                     <article>
                         <ul>
-                            <li><a href="/"><?=localisation::txt('профиль')?></a></li>
-                            <li><a href="/exit"><?=localisation::txt('выход')?></a></li>
+                            <li><a href="/staff"><?=localisation::txt('Персонал')?></a></li>
+                            <li><a href="/setting/services"><?=localisation::txt('Услуги')?></a></li>
+                            <li><a href="/setting"><?=localisation::txt('Настройки')?></a></li>
+                        </ul>
+                    </article>
+                    <article>
+                        <ul>
+                            <li><a href="/"><?=localisation::txt('Профиль')?></a></li>
+                            <li><a href="/exit"><?=localisation::txt('Выход')?></a></li>
                         </ul>
                     </article>
 
@@ -117,6 +122,5 @@
 
 <script>
     save_scroll();
-    console.log($.cookie('calendar_state'));
 
 </script>
