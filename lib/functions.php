@@ -1,5 +1,16 @@
 <?php
 
+
+
+function dump_to_file($file_name,$vars,$refresh_file=true){
+
+    if ($refresh_file and !isset($GLOBALS['occurred_dump_to_file'])){
+        unlink($file_name);
+    }
+    $GLOBALS['occurred_dump_to_file'] = true;
+    file_put_contents($file_name, print_r($vars, 1), FILE_APPEND);
+}
+
 function dump($var, $color = '', $i = -1, $key = '')
 {
     $i++;
@@ -754,7 +765,11 @@ function autoload_class_from($dir)
 
 }
 
+
+
+
 spl_autoload_register(function ($class) {
     $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
     include start_dir_for_autoload_class . '/' . $class . '.php';
 });
+

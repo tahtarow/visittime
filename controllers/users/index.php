@@ -1,2 +1,2 @@
 <?php
-include '../index.php';
+include CONTROLLERS.'/index.php';

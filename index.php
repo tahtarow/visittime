@@ -1,5 +1,6 @@
 <?php
 require_once('lib/functions.php');
+require_once('lib/project_functions.php');
 require_once('lib/lessphp/less.php');
 require_once('lib/idiorm-master/idiorm.php');
 require_once('lib/salabim/salabim.php');

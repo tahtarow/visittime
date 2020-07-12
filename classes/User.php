@@ -10,6 +10,7 @@ class User
         $chat = false,
         $count_new_messages = 0,
         $latest_chat = false,
+        $boss_id = false,
         $errors;
 
 
@@ -131,7 +132,6 @@ class User
             return false;
         }
     }
-
 
 
     function login()
@@ -269,11 +269,11 @@ class User
             ->findOne();
     }
 
-    private function create_invite($email, $object,$objects_id)
+    private function create_invite($email, $object, $objects_id)
     {
-        if ($object=='spot'){
+        if ($object == 'spot') {
             $spot_id = $objects_id;
-        }elseif($object=='network'){
+        } elseif ($object == 'network') {
             $network_id = $objects_id;
             $spot_id = false;
         }
@@ -396,13 +396,13 @@ class User
 
     public function create_invite_to_spot($email, $spot_id)
     {
-       return $this->create_invite($email, 'spot',$spot_id);
-    }
-    public function create_invite_to_network($email, $network_id)
-    {
-        return $this->create_invite($email, 'network',$network_id);
+        return $this->create_invite($email, 'spot', $spot_id);
     }
 
+    public function create_invite_to_network($email, $network_id)
+    {
+        return $this->create_invite($email, 'network', $network_id);
+    }
 
 
     public static function clear_network_ownership($user_id)
@@ -429,6 +429,23 @@ class User
         }
 
     }
+
+    public function get_boss_id()
+    {
+        if ($this->boss_id <> false) {
+            return $this->boss_id;
+        } else {
+            if ($this->check_role('director')) {
+                $this->boss_id = $this->data['id'];
+                return $this->boss_id;
+            } else {
+                $this->boss_id = $this->data['boss'];
+                return $this->boss_id;
+            }
+        }
+    }
+
+
 
 
 }

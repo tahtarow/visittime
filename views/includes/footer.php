@@ -108,6 +108,9 @@
         }
     });
 
+    // $(".pop-background").click(function () {
+    //     $(".pop").hide();
+    // });
 
 </script>
 
