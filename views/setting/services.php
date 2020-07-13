@@ -1,3 +1,16 @@
+<?
+function show_categories($data, $padding = '')
+{
+    foreach ($data as $item) { ?>
+        <option value="<?= $item['id'] ?>"><?= $padding . $item['name'] ?></option>
+        <?
+        if (!empty($item['childs'])) {
+            $padding1 = $padding . ' | ';
+            show_categories($item['childs'], $padding1);
+        }
+    }
+
+} ?>
 <style>
     body {
         background-image: url(/views/img/77.png); /* Путь к фоновому рисунку */
@@ -98,6 +111,7 @@
                     font-size: 20px;
                 }
 
+                .pop .error-message .message,
                 .pop .success-message .message {
                     padding: 5px;
                 }
@@ -127,6 +141,10 @@
                                             <div class="alert-success success-message">
                                                 <div class="badge-success message"><?= localisation::txt('Категория создана') ?></div>
                                             </div>
+                                            <div class="alert-danger error-message" style="display: none">
+                                                <div class="badge-danger message"><?= localisation::txt('Ошибка создания категории') ?></div>
+                                            </div>
+
                                             <span><?= localisation::txt('Название категории') ?></span>
                                             <div class="col-12"><input type="text" name="category_name" required=""
                                                                        minlength="3"></div>
@@ -134,24 +152,7 @@
                                             <div class="col-12">
                                                 <select name="parent_category" id="">
                                                     <option value=""><?= localisation::txt('Главная категория') ?></option>
-                                                    <?
-                                                    function show_categories($data, $padding = '')
-                                                    {
-                                                      foreach ($data as  $item) {?>
-                                                        <option value="<?= $item['id'] ?>"><?= $padding . $item['name'] ?></option>
-                                                        <?
-                                                        if (!empty($item['childs'])) {
-                                                            $padding1 = $padding . ' | ';
-                                                            show_categories($item['childs'],  $padding1);
-                                                        } ?>
-                                                    <? } ?>
-                                                        <?
-                                                    }
-
-                                                    show_categories($services->categories);
-                                                    ?>
-
-
+                                                    <? show_categories($services->categories); ?>
                                                 </select>
                                             </div>
 
@@ -203,9 +204,7 @@
                                             <div class="col-12">
                                                 <select name="procedure" id="">
                                                     <option value="123"><?= localisation::txt('Без категории') ?></option>
-                                                    <? foreach ($services->categories as $item) { ?>
-                                                        <option value="123"><?= $item['name'] ?></option>
-                                                    <? } ?>
+                                                    <? show_categories($services->categories); ?>
                                                 </select>
                                             </div>
 
@@ -380,7 +379,8 @@
 
                 },
                 error: function (xhr, ajaxOptions, thrownError) {
-                    alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                    form.find(".error-message").show();
+                    console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
                 }
             });
             return false;
