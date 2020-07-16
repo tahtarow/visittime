@@ -4,9 +4,8 @@ class Services
 {
     public
         $administrator_id,
-        $categories,
-        $services,
-        $list;
+        $list,
+        $services;
 
 
     function __construct($administrator_id)
@@ -20,6 +19,7 @@ class Services
 
         $categories = ORM::forTable('services_categories')
             ->where('administrator_id', $this->administrator_id)
+            ->orderByAsc('position')
             ->findArray();
         if (!empty($categories)) {
             $dataset = [];
@@ -30,6 +30,7 @@ class Services
         }
         $services = ORM::forTable('services')
             ->where('administrator_id', $this->administrator_id)
+            ->orderByAsc('position')
             ->findArray();
 
         if (!empty($services)) {
@@ -37,7 +38,6 @@ class Services
                 $categories[$service['category']]['services'][$service['id']] = $service;
             }
         }
-
 
         if (!empty($categories)) {
             $tree = [];
@@ -48,7 +48,7 @@ class Services
                     $categories[$node['parent']]['childs'][$node['id']] = &$node;
                 }
             }
-            $this->categories = $tree;
+            $this->list = $tree;
         }
     }
 
@@ -59,13 +59,30 @@ class Services
         } else {
             $array['active'] = 0;
         }
+        if (!empty($_POST['parent_category'])){
+            $so_categories = ORM::forTable('services_categories')->where('parent', $_POST['parent_category'])->count();
+            $position = $so_categories + 1;
+        }else{
+            $so_categories = ORM::forTable('services_categories')->where('parent', 0)->count();
+            $position = $so_categories + 1;
+        }
         return ORM::forTable('services_categories')
             ->create()
             ->set('administrator_id', $this->administrator_id)
             ->set('name', $array['name'])
             ->set('parent', $array['parent'])
             ->set('active', $array['active'])
+            ->set('position', $position)
             ->save();
+    }
+
+    public function get_cat_info($cat_id)
+    {
+        return ORM::forTable('services_categories')
+                ->where('administrator_id', $this->administrator_id)
+                ->where('id', $cat_id)
+                ->findArray()[0];
+
     }
 
 }

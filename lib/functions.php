@@ -1,11 +1,13 @@
 <?php
 
 
-
-function dump_to_file($file_name,$vars,$refresh_file=true){
-
-    if ($refresh_file and !isset($GLOBALS['occurred_dump_to_file'])){
-        unlink($file_name);
+function dump_to_file($vars, $file_name = '', $refresh_file = true)
+{
+    if (empty($file_name)) $file_name = $_SERVER['DOCUMENT_ROOT'] . '/dump.php';
+    if (file_exists($file_name)) {
+        if ($refresh_file and !isset($GLOBALS['occurred_dump_to_file'])) {
+            unlink($file_name);
+        }
     }
     $GLOBALS['occurred_dump_to_file'] = true;
     file_put_contents($file_name, print_r($vars, 1), FILE_APPEND);
@@ -444,7 +446,7 @@ function sortKeysDescGOOD(&$arrNew)
     });
 }
 
-function var_export_to_file($var,$patch)
+function var_export_to_file($var, $patch)
 {
     file::create_dir_for_file_if_not_exist($patch);
     $output = json_decode(str_replace(array('(', ')'), array('&#40', '&#41'), json_encode($var)), true);
@@ -534,7 +536,7 @@ class file
                     $name = $new_name;
                 }
                 $names[] = $name;
-                $patch .='/'.$name;
+                $patch .= '/' . $name;
                 self::create_dir_for_file_if_not_exist($patch);
                 move_uploaded_file($tmp_name, $patch);
             }
@@ -546,14 +548,14 @@ class file
         }
     }
 
-    static function create_dir_for_file_if_not_exist($file){
+    static function create_dir_for_file_if_not_exist($file)
+    {
         $dir = pathinfo($file)['dirname'];
-        if (!file_exists($dir)){
+        if (!file_exists($dir)) {
             mkdir($dir, 0777, true);
         }
     }
 }
-
 
 
 class errors
@@ -764,8 +766,6 @@ function autoload_class_from($dir)
     define('start_dir_for_autoload_class', $dir);
 
 }
-
-
 
 
 spl_autoload_register(function ($class) {

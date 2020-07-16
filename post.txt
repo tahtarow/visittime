@@ -1,8 +1,0 @@
-Array
-(
-    [category_name] => 111
-    [parent_category] => 14
-    [position] => start
-    [category_active] => on
-    [form] => 1
-)
