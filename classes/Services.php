@@ -85,4 +85,14 @@ class Services
 
     }
 
+    public function edit_category($data)
+    {
+        return ORM::forTable('services_categories')
+            ->find_one($data['id'])
+            ->set('name',$data['name'])
+            ->set('parent',$data['parent'])
+            ->set('active',$data['active'])
+            ->save();
+    }
+
 }

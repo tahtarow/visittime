@@ -428,7 +428,8 @@ function show_services_list($categories)
             </div>
         </div>
     </div>
-    <p id="person">asdfasdf</p>
+
+
     <script>
         $('.js-ajax-form').submit(function () {
             form = $(this);
@@ -481,12 +482,12 @@ function show_services_list($categories)
                         result = '';
                         $.each(categoryes, function (key, cat) {
                             selected = '';
-                            if (answer.category.parent==cat.id){
+                            if (answer.category.parent == cat.id) {
                                 selected = 'selected';
                             }
-                            result = result + '<option value="' + key + '" '+selected+'>' + padding + cat.name + '</option>';
+                            result = result + '<option value="' + key + '" ' + selected + '>' + padding + cat.name + '</option>';
                             if (cat.childs) {
-                                result = result + collect_categories(cat.childs, padding+ ' | ');
+                                result = result + collect_categories(cat.childs, padding + ' | ');
                             }
                         });
 
@@ -509,8 +510,9 @@ function show_services_list($categories)
                         '<div class="badge-danger message"><?//= localisation::txt("Ошибка создания категории") ?></div>' +
                         '</div>' +
                         '<span><?= localisation::txt("Название категории") ?></span>' +
-                        '<div class="col-12"><input type="text" name="new_category_name" required=""' +
+                        '<div class="col-12"><input type="text" name="editet_category_name" required=""' +
                         'minlength="3" value="' + answer.category.name + '"></div>' +
+                        '<input type="hidden" name="id" value = \'' + answer.category.id + '\'>' +
                         '<span><?= localisation::txt("Родительская категория") ?></span>' +
                         '<div class="col-12">' +
                         '<select name="parent_category" id="">' +
@@ -563,20 +565,18 @@ function show_services_list($categories)
     </script>
 
 
-
-
-<!--    <script id="sample_template" type="text/html">-->
-<!--        <h1>{{name}}</h1>-->
-<!--    </script>-->
-<!---->
-<!---->
-<!--    <script>-->
-<!--        var view = {-->
-<!--            name : "Joe",-->
-<!--            occupation : "Web Developer"-->
-<!--        };-->
-<!--            var output = Mustache.render("{{name}} is a  {{occupation}}", view);-->
-<!--            document.getElementById('person').innerHTML = output;-->
-<!---->
-<!--    </script>-->
+    <!--    <script id="sample_template" type="text/html">-->
+    <!--        <h1>{{name}}</h1>-->
+    <!--    </script>-->
+    <!---->
+    <!---->
+    <!--    <script>-->
+    <!--        var view = {-->
+    <!--            name : "Joe",-->
+    <!--            occupation : "Web Developer"-->
+    <!--        };-->
+    <!--            var output = Mustache.render("{{name}} is a  {{occupation}}", view);-->
+    <!--            document.getElementById('person').innerHTML = output;-->
+    <!---->
+    <!--    </script>-->
 

@@ -1,9 +1,9 @@
 
-<div id="sidebar">
+<div id="sidebar" >
     <div class="inner">
 
         <!-- Menu -->
-        <nav id="menu">
+        <nav id="menu" >
             <header class="major">
                 <h2><?=localisation::txt('Меню')?></h2>
             </header>
